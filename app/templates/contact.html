@@ -8,28 +8,28 @@
 <form class = "contactForm" method = "POST" action="">
     {{ form.csrf_token }}
 
-    {{ form.name.label(class_="label") }}
+    {{ form.name.label }}
     <strong>(Required)</strong>
     <p>Please enter your full name.</p>
-    {{ form.name(size=20, placeholder = "eg. John Doe") }}
+    {{ form.name(size=40, placeholder = "eg. John Doe") }}
     <br>
 
-    {{ form.email.label(class_="label") }}
+    {{ form.email.label }}
     <strong>(Required)</strong>
     <p>Please enter your e-mail address.</p>
-    {{ form.email(size=20, placeholder = "eg. my@example.com") }}
+    {{ form.email(size=40, placeholder = "eg. my@example.com") }}
     <br>
 
-    {{ form.subject.label(class_="label") }}
+    {{ form.subject.label }}
     <strong>(Required)</strong>
     <p>Please enter the subject of the message.</p>
-    {{ form.subject(size=20) }}
+    {{ form.subject(size=40) }}
     <br>
 
-    {{ form.message.label(class_="label") }}
+    {{ form.message.label }}
     <strong>(Required)</strong>
     <p>Please enter the message you would like to send.</p>
-    {{ form.message(size=20) }}
+    {{ form.message(size=60) }}
     <br>
     <button type = "submit">Send</button>
 </form>
